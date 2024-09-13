@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <nav class="menu">
+                <a href="index.html">Про нас</a>
+                <a href="page2.html">Популярні напрямки</a>
+                <a href="#">Забронювати путівку</a>
+                <a href="page4.html">Поради</a>
+                <a href="page5.html">Фото</a>
+            </nav>
+            <div class="x-block">
+                <h2>Your Next Adventure Awaits!</h2>
+            </div>
+        </div>
+        <div class="grid-item item2">
+            <p>Просто оберіть напрямок, а ми подбаємо про решту. Забронюйте свою подорож уже зараз і пориньте у світ незабутніх вражень!.</p>
+        </div>
+        <div class="grid-item item3">
+            <img src="./imgs/travell.webp" alt="travell">
+        </div>
+        <div class="grid-item item4">
+            <form action="/submit-booking" method="POST">
+                <h2>Бронювання путівки</h2>
+                
+                <label for="name">Ваше ім'я:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="destination">Напрямок подорожі:</label><br>
+                <select id="destination" name="destination" required>
+                    <option value="paris">Париж</option>
+                    <option value="maldives">Мальдіви</option>
+                    <option value="barcelona">Барселона</option>
+                    <option value="tokyo">Токіо</option>
+                </select><br><br>
+            
+                <label for="start-date">Дата початку:</label><br>
+                <input type="date" id="start-date" name="start_date" required><br><br>
+            
+                <label for="end-date">Дата закінчення:</label><br>
+                <input type="date" id="end-date" name="end_date" required><br><br>
+            
+                <label for="num-people">Кількість людей:</label><br>
+                <input type="number" id="num-people" name="num_people" min="1" required><br><br>
+            
+                <input type="submit" value="Забронювати">
+            </form>
+            
+        </div>
+        <div class="grid-item item5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc ultricies egestas neque volutpat volutpat. Integer dui leo, 
+                mattis quis porttitor et, lobortis sed odio. Proin non placerat libero. 
+                Proin sagittis mauris maximus erat ultrices semper. Nulla orci ex, cursus sed sem non, pretium faucibus felis. 
+                Nullam laoreet egestas condimentum. Aenean ultrices nibh non mi iaculis, eu mattis leo imperdiet. 
+                Nam non blandit nulla. Pellentesque ac ex sagittis leo ultricies pellentesque et non mauris.</p>
+        </div>
+        <div class="grid-item item6">
+            <div class="y-block">
+                <h3>Stay Connected with Us!</h3>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/"><img src="./imgs/Instagram-Logo-PNG-2018.png.webp" alt="instagram"></a>
+                <a href="https://www.telegram.com/"><img src="./imgs/Telegram_logo.svg.webp" alt="telegram"></a>
+                <a href="https://www.facebook.com/"><img src="./imgs/Facebook_iOS_2019_icon_padded.webp" alt="facebook"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
